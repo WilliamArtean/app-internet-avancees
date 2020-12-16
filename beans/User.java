@@ -1,4 +1,4 @@
-package model;
+package beans;
 
 public class User {
 
@@ -7,8 +7,6 @@ public class User {
 	
 	
 	public User() {
-		this.name = "defaultuser";
-		this.password = "defaultpassword";
 	}
 	
 	public User(String name, String password) {
@@ -23,6 +21,22 @@ public class User {
 		res += " ; password=" + this.password;
 		res += "]";
 		return res;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	
